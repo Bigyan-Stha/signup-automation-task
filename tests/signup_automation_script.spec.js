@@ -24,7 +24,7 @@ test('Sign Up automation', async ({ page }) => {
     await page.getByLabel('First Name').fill('Unknown');
     await page.getByLabel('Last Name').fill('User');
     await page.getByLabel('Email Address').fill(testEmail);
-    await page.locator('input[placeholder="00-00000000"]').fill('9805951198');
+    await page.locator('input[placeholder="00-00000000"]').fill('9804952198');
     await page.locator('input[type="password"]').first().fill('Password123!');
     await page.locator('input[type="password"]').nth(1).fill('Password123!');
 
