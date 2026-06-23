@@ -48,20 +48,6 @@ npx playwright test --headed
 npx playwright show-report
 ```
 
-## Test Data / Accounts
-
-- Tests are designed to run with disposable or test accounts. Configure test credentials via environment variables or a `.env` file.
-
-Example `.env` (create at project root):
-
-```env
-TEST_EMAIL=test+1@example.com
-TEST_PASSWORD=YourTestPassword123
-BASE_URL=https://authorized-partner.vercel.app/
-```
-
-- If your tests generate unique users, no manual account setup is required. If specific accounts are needed, set the variables above before running tests.
-
 ## Features
 
 - Automation of the signup flow without manual intervention
