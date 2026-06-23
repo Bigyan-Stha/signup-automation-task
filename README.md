@@ -1,44 +1,64 @@
-# Signup Automation Task
+# QA Signup Automation – Vrit Technologies Task
 
-This repository contains Playwright automation tests for a signup flow.
+Automated Playwright tests that exercise the complete signup flow on https://authorized-partner.vercel.app/.
+Designed to run headlessly for CI or locally with minimal setup.
 
-## Project structure
+## Tech Stack
 
-- `tests/` - Playwright test files
-- `playwright.config.js` - Playwright configuration
-- `package.json` - npm scripts and dependencies
-- `test-results/` and `playwright-report/` - generated test artifacts and reports
+- Playwright
+- JavaScript (Node.js)
+
+## Project Structure
+
+- `tests/` — Playwright test specs
+- `playwright.config.js` — Playwright configuration
+- `package.json` — npm scripts and dependencies
 
 ## Prerequisites
 
-- Node.js (>= 14)
-- npm
+- Node.js (LTS) and `npm`
 
-## Setup
+## Installation
 
-1. Install dependencies
+Install dependencies and Playwright browsers:
 
 ```bash
 npm install
 npx playwright install
 ```
 
-2. Run tests
+## Run Tests
+
+- Run tests (headless):
 
 ```bash
 npx playwright test
 ```
 
-3. View the HTML report
+- Run tests (headed / with browser UI):
+
+```bash
+npx playwright test --headed
+```
+
+## View Report
+
+Generate and open the HTML report produced by Playwright:
 
 ```bash
 npx playwright show-report
 ```
 
-## Notes
+## Features
 
-- Tests live in `tests/` — edit or add specs there.
-- Test artifacts (videos, traces, screenshots) are stored in `test-results/` and the HTML report in `playwright-report/`.
-- Branch containing current workspace: `upload-workspace`.
+- End-to-end automation of the signup flow without manual intervention
+- Captures screenshots, videos, and traces on failure (configured in `playwright.config.js`)
+- Suitable for CI integration and local debugging
 
-If you want me to open a PR to merge into `main`, tell me and I will create it.
+## Author
+
+Bigyan Shrestha
+
+---
+
+Branch: `upload-workspace` — this README was updated and pushed to the repository.
