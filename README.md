@@ -52,8 +52,4 @@ npx playwright show-report
 - Automation of the signup flow without manual intervention
 - Captures videos, and traces on failure (configured in `playwright.config.js`)
 
-Bigyan Shrestha
-
----
-
 Branch: `upload-workspace` — this README was updated and pushed to the repository.
