@@ -12,9 +12,12 @@ Automated Playwright tests that exercise the complete signup flow.
 - `playwright.config.js` — Playwright configuration
 - `package.json` — npm scripts and dependencies
 
-## Prerequisites
+## Environment & Prerequisites
 
-- Node.js (LTS) and `npm`
+- Language: JavaScript (Node.js)
+- Recommended Node.js: 18.x (LTS)
+- npm: 8+
+- Playwright: v1.x (install via `npx playwright install`)
 
 ## Installation
 
@@ -25,7 +28,7 @@ npm install
 npx playwright install
 ```
 
-## Run Tests
+## How to run
 
 - Run tests (headless):
 
@@ -39,13 +42,25 @@ npx playwright test
 npx playwright test --headed
 ```
 
-## View Report
-
-Generate and open the HTML report produced by Playwright:
+- View the HTML report:
 
 ```
 npx playwright show-report
 ```
+
+## Test Data / Accounts
+
+- Tests are designed to run with disposable or test accounts. Configure test credentials via environment variables or a `.env` file.
+
+Example `.env` (create at project root):
+
+```env
+TEST_EMAIL=test+1@example.com
+TEST_PASSWORD=YourTestPassword123
+BASE_URL=https://authorized-partner.vercel.app/
+```
+
+- If your tests generate unique users, no manual account setup is required. If specific accounts are needed, set the variables above before running tests.
 
 ## Features
 
