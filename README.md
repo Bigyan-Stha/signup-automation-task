@@ -1,12 +1,10 @@
-# QA Signup Automation – Vrit Technologies Task
+# QA Signup Automation
 
-Automated Playwright tests that exercise the complete signup flow on https://authorized-partner.vercel.app/.
-Designed to run headlessly for CI or locally with minimal setup.
+Automated Playwright tests that exercise the complete signup flow.
 
 ## Tech Stack
-
 - Playwright
-- JavaScript (Node.js)
+- JavaScript
 
 ## Project Structure
 
@@ -22,7 +20,7 @@ Designed to run headlessly for CI or locally with minimal setup.
 
 Install dependencies and Playwright browsers:
 
-```bash
+```
 npm install
 npx playwright install
 ```
@@ -31,13 +29,13 @@ npx playwright install
 
 - Run tests (headless):
 
-```bash
+```
 npx playwright test
 ```
 
 - Run tests (headed / with browser UI):
 
-```bash
+```
 npx playwright test --headed
 ```
 
@@ -45,17 +43,14 @@ npx playwright test --headed
 
 Generate and open the HTML report produced by Playwright:
 
-```bash
+```
 npx playwright show-report
 ```
 
 ## Features
 
-- End-to-end automation of the signup flow without manual intervention
-- Captures screenshots, videos, and traces on failure (configured in `playwright.config.js`)
-- Suitable for CI integration and local debugging
-
-## Author
+- Automation of the signup flow without manual intervention
+- Captures videos, and traces on failure (configured in `playwright.config.js`)
 
 Bigyan Shrestha
 
